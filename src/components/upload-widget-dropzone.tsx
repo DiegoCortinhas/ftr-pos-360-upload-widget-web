@@ -4,10 +4,10 @@ import { CircularProgressBar } from "./ui/circular-progress-bar";
 import { useUploads } from "../store/uploads";
 
 export function UploadWidgetDropzone() {
-    const { addUploads } = useUploads()
+    const { addUploads } = useUploads();
 
-    const isThereAnyPendingUpload = false
-    const uploadGlobalPercentage = 66
+    const isThereAnyPendingUpload = false;
+    const uploadGlobalPercentage = 66;
 
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
         multiple: true,
